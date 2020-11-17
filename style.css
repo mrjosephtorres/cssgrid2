@@ -1,0 +1,124 @@
+    #container-one {
+        height: 200px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 5px 5px;
+    }
+
+p {
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.children-one-a {
+    background-color: yellow;
+    border: red 1px;
+    border-radius: 5px;
+    grid-column: 75%;
+    grid-row: 1/2;
+}
+
+.children-one-b {
+    background-color: yellow;
+    border: red 1px;
+    border-radius: 5px;
+    grid-column: 25%;
+    grid-row: 1/3;
+}
+
+.children-one-c {
+    background-color: yellow;
+    border: red 1px;
+    border-radius: 5px;
+    grid-column: 25%;
+    grid-row: 50%;
+}
+
+.children-one-d {
+    background-color: yellow;
+    border: red 1px;
+    border-radius: 5px;
+    grid-column: 25%;
+    grid-row: 50%;
+}
+
+#container-two {
+    margin-top: 500px;
+    width: 98vw;
+    height: 98vh;
+    display: grid;
+    grid-gap: 10px;
+}
+
+#main-two {
+    margin-top: 10px;
+    background-color: solid red 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px 10px;
+}
+.children-two-a {
+    background-color: orange;
+    border-radius: 5px;
+    grid-column: 50%;
+    grid-row: 50%;
+}
+.children-two-b {
+    background-color: orange;
+    border-radius: 5px;
+    grid-column: 50%;
+    grid-row: 50%;
+}
+
+.children-two-c {
+    background-color: orange;
+    border-radius: 5px;
+    grid-column: 25%;
+    grid-row: 2/3;
+ 
+}
+.children-two-d {
+    background-color: orange;
+    border-radius: 5px;
+    grid-column: 75%;
+    grid-row: 2/3;
+}
+.children-two-e {
+    background-color: orange;
+    border-radius: 5px;
+}
+
+#container-three {
+    margin-top: 300px;
+    width: 98vw;
+    height: 98vh;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 10px;
+
+#header-three {
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+#main-three {
+    background-color: solid red 3px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 10px 10px;
+}
+
+.children-three {
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+#footer-three {
+    background-color: green;
+    border-radius: 5px;
+}
+

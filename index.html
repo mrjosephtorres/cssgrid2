@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid 2</title>
+    
+    <style>
+
+        #container-one {
+                height: 200px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 10px 10px;
+            }
+
+        p {
+            color: red;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .children-one-a {
+            background-color: yellow;
+            border-radius: 15px;
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+
+        .children-one-b {
+            background-color: yellow;
+            border-radius: 15px;
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+
+        .children-one-c {
+            background-color: yellow;
+            border-radius: 15px;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .children-one-d {
+            background-color: yellow;
+            border-radius: 15px;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        #container-two {
+            margin-top: 300px;
+            width: 98vw;
+            height: 98vh;
+            display: grid;
+            grid-gap: 10px;
+        }
+
+        #main-two {
+            margin-top: 10px;
+            background-color: solid red 3px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 10px 10px;
+        }
+        .children-two-a {
+            background-color: orange;
+            border-radius: 15px;
+            background-color: purple;
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+        .children-two-b {
+            background-color: violet;
+            border-radius: 15px;
+            grid-column: 3/5;
+            grid-row: 1/2;
+        }
+
+        .children-two-c {
+            background-color: orange;
+            border-radius: 15px;
+          /*  grid-column: 1/2;
+            grid-row: 2/3; */
+        
+        }
+        .children-two-d {
+            background-color: tomato;
+            border-radius: 15px;
+            grid-column: 2/5;
+            grid-row: 2/3; 
+        }
+        .children-two-e {
+            background-color: rgb(73, 54, 19);
+            border-radius: 15px;
+            grid-column: 1/5;
+            grid-row: 3/4;; 
+        }
+
+        #container-three {
+            margin-top: 300px;
+            width: 98vw;
+            height: 98vh;
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+            grid-gap: 20px;
+        }
+
+
+        #header-three {
+            background-color: aqua;
+            border-radius: 15px;
+        }
+
+        #main-three {
+            background-color: solid red 3px;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 10px 10px;
+        }
+
+        .children-three {
+            background-color: yellow;
+            border-radius: 15px;
+        }
+
+        #footer-three {
+            background-color: green;
+            border-radius: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container-one">
+       
+        <div class="children-one-a"><p>A</p></div> <!--children-one-a--> 
+        <div class="children-one-b"><p>B</p></div> <!--children-one-b-->
+        <div class="children-one-c"><p>C</p></div> <!--children-one-c-->
+        <div class="children-one-d"><p>D</p></div> <!--children-one-d-->
+
+    </div> <!--container-one-->
+
+    <div id="container-two">
+       
+       <main id="main-two">  
+            <div class="children-two-a"><p>A</p></div> <!--children-two-a-->
+            <div class="children-two-b"><p>B</p></div> <!--children-two-b-->
+            <div class="children-two-c"><p>C</p></div> <!--children-two-c-->
+            <div class="children-two-d"><p>D</p></div> <!--children-two-d-->
+            <div class="children-two-e"><p>E</p></div> <!--children-two-e-->
+        </main> <!--main-two-->
+               
+        
+
+    </div> <!--container-two-->
+
+    <div id="container-three">
+        <header id="header-three"><p>My Header</p></header> <!--header-three-->
+
+        <main id="main-three">
+            <div class="children-three"><p>Sidebar</p></div> <!--children-three-->
+            <div class="children-three"><p>2 column, header and footer</p></div> <!--children-three-->
+        </main> <!--main-three-->
+
+        <div id="footer-three"><p>My Footer</p></div> <!--footer-three-->
+
+    </div> <!--container-three-->
+    
+</body>
+</html>
